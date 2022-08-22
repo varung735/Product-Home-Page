@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styles for navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40%;
+}
+
+.nav-item {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.active-item {
+  color: #fe5e35;
+}
+
+/* styles for intro-section */
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  font-family: "Fredoka One";
+}
+
+/* left-section */
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-family: "Poppins";
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-family: "Fredoka One";
+  font-size: 4.78rem;
+  font-weight: bold;
+}
+
+.sub-headlines {
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+img[alt="plus"] {
+  width: 20px;
+  height: 20px;
+}
+
+.sub-headline {
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.text {
+  margin-top: 5%;
+  padding-right: 8%;
+}
+
+.action-btns {
+  margin-top: 5%;
+}
+
+/* The selector below selects see catalog button */
+div.action-btns > button + button {
+  margin-left: 3%;
+}
+
+.action-btn {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background: #fe5e35;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* right-section */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discount {
+  position: absolute;
+  bottom: 20%;
+  left: 57%;
+}
+
+.discount-content > h4 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.discount-content > h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.discount-content {
+  position: absolute;
+  bottom: 26%;
+  left: 59%;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background: yellow;
+}
+
+.tomato-dot {
+  background: tomato;
+  margin: 0 3%;
+}
+
+.black-dot {
+  background: black;
+}
