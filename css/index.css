@@ -19,6 +19,10 @@ nav {
   gap: 40%;
 }
 
+.hamburger{
+  display: none;
+}
+
 .nav-item {
   font-family: "Poppins";
   font-size: 20px;
@@ -66,6 +70,8 @@ h1 {
 img[alt="plus"] {
   width: 20px;
   height: 20px;
+  background-color: #fe5e35;
+  border-radius: 50%;
 }
 
 .sub-headline {
@@ -97,7 +103,13 @@ div.action-btns > button + button {
   color: #ffffff;
 }
 
+
 /* right-section */
+
+.dots + .action-btn{
+  margin-top: 6%;
+  margin-left: 35%;
+}
 
 .right-section {
   display: flex;
@@ -107,8 +119,8 @@ div.action-btns > button + button {
 
 .discount {
   position: absolute;
-  bottom: 20%;
-  left: 57%;
+  bottom: 28%;
+  left: 61%;
 }
 
 .discount-content > h4 {
@@ -124,8 +136,13 @@ div.action-btns > button + button {
 
 .discount-content {
   position: absolute;
-  bottom: 26%;
-  left: 59%;
+  bottom: 33%;
+  left: 63%;
+}
+
+img[alt="headphone"]{
+  width: 520px;
+  height: 520px;
 }
 
 .dots {
@@ -152,3 +169,127 @@ div.action-btns > button + button {
 .black-dot {
   background: black;
 }
+
+/* styles for mobile screens between 0 & 500px width*/
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+  /* styles for navbar */
+
+  nav{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-items{
+    display: none;
+  }
+
+  img[alt="actions"]{
+    display: none;
+  }
+
+  .hamburger{
+    display: inline;
+    height: 40px;
+    width: 40px;
+  }
+
+  /* styles for intro section */
+
+  .intro-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* styles for headphone */
+
+  img[alt="headphone"]{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 380px;
+    height: 500px;
+  }
+
+  .discount {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+
+  .discount-content {
+    position: absolute;
+    top: 15%;
+    left: 59%;
+  }
+
+  .dots + .action-btn{
+    margin: auto;
+    margin-top: 5%;
+  }
+
+}
+
+/* styles for mobile devices between 500 to 790px width */
+
+@media screen and (min-width:500px) and (max-width: 1000px){
+  /* styles for navbar */
+
+  nav{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-items{
+    display: none;
+  }
+
+  img[alt="actions"]{
+    display: none;
+  }
+
+  .hamburger{
+    display: inline;
+    height: 40px;
+    width: 40px;
+  }
+
+  /* styles for intro section */
+
+  .intro-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* styles for headphone */
+
+  img[alt="headphone"]{
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 600px;
+    height: 600px;
+  }
+
+  .discount {
+    position: absolute;
+    top: 67%;
+    left: 8%;
+  }
+
+  .discount-content {
+    position: absolute;
+    top: 73%;
+    left: 12%;
+  }
+
+  .dots + .action-btn{
+    margin: auto;
+    margin-top: 5%;
+  }
+}
+
+/* styles for mobile screens between  */
